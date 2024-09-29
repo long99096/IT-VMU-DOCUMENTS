@@ -1,0 +1,10 @@
+C:\WF C#\De7 bai1\De7 bai1\obj\Debug\De7 bai1.csproj.AssemblyReference.cache
+C:\WF C#\De7 bai1\De7 bai1\obj\Debug\De7_bai1.Form1.resources
+C:\WF C#\De7 bai1\De7 bai1\obj\Debug\De7_bai1.Properties.Resources.resources
+C:\WF C#\De7 bai1\De7 bai1\obj\Debug\De7 bai1.csproj.GenerateResource.cache
+C:\WF C#\De7 bai1\De7 bai1\obj\Debug\De7 bai1.csproj.CoreCompileInputs.cache
+C:\WF C#\De7 bai1\De7 bai1\bin\Debug\De7 bai1.exe.config
+C:\WF C#\De7 bai1\De7 bai1\bin\Debug\De7 bai1.exe
+C:\WF C#\De7 bai1\De7 bai1\bin\Debug\De7 bai1.pdb
+C:\WF C#\De7 bai1\De7 bai1\obj\Debug\De7 bai1.exe
+C:\WF C#\De7 bai1\De7 bai1\obj\Debug\De7 bai1.pdb
