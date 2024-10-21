@@ -1,0 +1,12 @@
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\bin\Debug\PTUDvsCSDL.exe.config
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\bin\Debug\PTUDvsCSDL.exe
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\bin\Debug\PTUDvsCSDL.pdb
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.csprojResolveAssemblyReference.cache
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.Properties.Resources.resources
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.csproj.GenerateResource.Cache
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.exe
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.pdb
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.BCNN.resources
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.Tong2so.resources
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.Phuongtrinhbac2.resources
+D:\Long Hoang Bui\PTUDvsCSDL\PTUDvsCSDL\obj\Debug\PTUDvsCSDL.SoNguyenTo.resources

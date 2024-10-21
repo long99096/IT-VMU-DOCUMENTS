@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+body{
+	margin:30px;
+}
+
+/* Transition */
+#vidu_transition{
+	width:100px;
+	height:100px;
+	background-color:#F90;
+	transition:1s
+}
+
+#vidu_transition:hover{
+	width:200px;
+	height:150px;
+}
+
+/* Tranform -> Translate */
+
+#vidu_tranform_translate{
+	width:100px;
+	height:100px;
+	background-color:#093;
+	transition:1s
+}
+#vidu_tranform_translate:hover{
+	transform:translate(100px, 50px);
+}
+
+/* Tranform -> Rotate */
+
+#vidu_tranform_rotate{
+	width:100px;
+	height:100px;
+	background-color:#C00;
+	transition:1s
+}
+#vidu_tranform_rotate:hover{
+	transform:rotate(-45deg);
+}
+
+/* Tranform -> Scale */
+
+#vidu_tranform_scale{
+	width:100px;
+	height:100px;
+	background-color:#F09;
+	transition:2s
+}
+#vidu_tranform_scale:hover{
+	transform:scale(2,3);
+}
+
+/* Tranform -> Skew */
+
+#vidu_tranform_skew{
+	width:100px;
+	height:100px;
+	background-color:#339;
+	transition:2s
+}
+#vidu_tranform_skew:hover{
+	transform:skew(45deg,10deg);
+}
+
+/* Tranform 3D -> RotateX */
+
+#vidu_tranform3d_rotateX{
+	width:100px;
+	height:100px;
+	background-color:#90C;
+	transition:2s
+}
+#vidu_tranform3d_rotateX:hover{
+	transform:rotateX(45deg);
+}
+
+/* Tranform 3D -> RotateX + Y */
+
+#vidu_tranform3d_rotateXY{
+	width:100px;
+	height:100px;
+	background-color:#90C;
+	transition:2s
+}
+#vidu_tranform3d_rotateXY:hover{
+	transform:rotateX(45deg) rotateY(30deg);
+}
+
+/* Tranform 3D -> RotateX + Y + Z */
+
+#vidu_tranform3d_rotateXYZ{
+	width:100px;
+	height:100px;
+	background-color:#90C;
+	transition:2s
+}
+#vidu_tranform3d_rotateXYZ:hover{
+	transform:rotateX(45deg) rotateY(30deg) rotateZ(45deg);
+}
+
+/* Tranform 3D -> Rotate3D */
+
+#vidu_tranform3d_rotate3D{
+	width:100px;
+	height:100px;
+	background-color:#FC9;
+	transition:2s
+}
+#vidu_tranform3d_rotate3D:hover{
+	transform:rotate3D(1,0,1,45deg);
+}

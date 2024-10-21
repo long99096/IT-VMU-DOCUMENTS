@@ -1,0 +1,54 @@
+body{
+	font-family: Tahoma;
+	font-size: 13px;
+	background-color: #f7f7f7;
+	width: 500px;
+    height: 600px;
+    margin: auto;
+}
+
+.header{
+	width: 500px;
+    height: 85px;
+    background-image: url('header_background.png');
+}
+
+.footer{
+	width: 500px;
+    height: 67px;
+    background-image: url('footer_background.png');
+    text-align: right;
+    margin-top: 10px;
+}
+
+
+.formitem{
+	width: 450px;
+	margin-top: 20px;
+}
+
+.formitem input[type="text"]{
+	width: 100%;
+	background-image: url('user.png');
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+
+.formitem input[type="email"] {
+	width: 100%;
+	background-image: url('email.png');
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+
+.formitem input[type="password"] {
+	width: 100%;
+	background-image: url('key.png');
+	background-repeat: no-repeat;
+	padding-left: 40px;
+}
+
+.formitem button{
+	margin-left: 330px;
+}
+

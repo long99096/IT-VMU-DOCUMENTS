@@ -1,0 +1,17 @@
+.hinhchunhatcam{
+	width: 100%;
+	height: 100px;
+	background: orange;
+}
+.hinhchunhatxanh{
+	width: 30%;
+	height: calc(100vh - 100px);
+	background: blue;
+	float: left;
+}
+.hinhchunhatdo{
+	margin-left: 30%;
+	width: 70%;
+	height: calc(100vh - 100px);
+	background: red;
+}
