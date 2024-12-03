@@ -1,0 +1,10 @@
+C:\WF C#\De4 bai2\De4 bai2\bin\Debug\De4 bai2.exe.config
+C:\WF C#\De4 bai2\De4 bai2\bin\Debug\De4 bai2.exe
+C:\WF C#\De4 bai2\De4 bai2\bin\Debug\De4 bai2.pdb
+C:\WF C#\De4 bai2\De4 bai2\obj\Debug\De4 bai2.csproj.AssemblyReference.cache
+C:\WF C#\De4 bai2\De4 bai2\obj\Debug\De4_bai2.Form1.resources
+C:\WF C#\De4 bai2\De4 bai2\obj\Debug\De4_bai2.Properties.Resources.resources
+C:\WF C#\De4 bai2\De4 bai2\obj\Debug\De4 bai2.csproj.GenerateResource.cache
+C:\WF C#\De4 bai2\De4 bai2\obj\Debug\De4 bai2.csproj.CoreCompileInputs.cache
+C:\WF C#\De4 bai2\De4 bai2\obj\Debug\De4 bai2.exe
+C:\WF C#\De4 bai2\De4 bai2\obj\Debug\De4 bai2.pdb

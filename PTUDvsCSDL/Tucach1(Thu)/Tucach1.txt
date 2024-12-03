@@ -1,0 +1,33 @@
+TẠO 1 CSDL GỒM CÁC BẢNG SAU:
+(A) Khoa(MaKhoa,TenKhoa,MaTruongKhoa)
+MaKhoa LÀ 1 SỐ NGUYÊN TỰ TĂNG, KHÓA CHÍNH
+TenKhoa LÀ 1 CHUỖI TỐI ĐA 30 KÝ TỰ, KO ĐỂ TRỐNG, KO TRÙNG
+MaTruongKhoa LÀ 1 SỐ NGUYÊN, ĐƯỢC PHÉP ĐỂ TRỐNG, THAM CHIẾU
+SANG MaGiangVien CỦA BẢNG GiangVien
+(B) ChuyenNganh(MaChuyenNganh,TenChuyenNganh,MaGiangVienPhuTrach,MaKhoa)
+MaChuyenNganh LÀ 1 SỐ NGUYÊN TỰ TĂNG, KHÓA CHÍNH
+TenChuyenNganh LÀ 1 CHUỖI TỐI ĐA 30 KÝ TỰ, KO ĐỂ TRỐNG, KO TRÙNG
+MaGiangVienPhuTrach LÀ 1 SỐ NGUYÊN, ĐƯỢC PHÉP ĐỂ TRỐNG, THAM CHIẾU
+SANG MaGiangVien CỦA BẢNG GiangVien
+(C) Lop(TenLop,MaCVHT,NamBatDau)
+TenLop LÀ 1 CHUỖI CÓ 7 KÝ TỰ, KHÓA CHÍNH
+MaCVHT LÀ 1 SỐ NGUYÊN, KO ĐỂ TRỐNG, THAM CHIẾU SANG MaGiangVien
+CỦA BẢNG GiangVien
+NamBatDau LÀ 1 SỐ NGUYÊN KO ÂM
+(D) GiangVien(MaGiangVien,HoTen,NgaySinh,MaKhoa)
+MaGiangVien LÀ 1 SỐ NGUYÊN TỰ TĂNG, KHÓA CHÍNH
+HoTen LÀ 1 CHUỖI TỐI ĐA 30 KÝ TỰ, KO ĐỂ TRỐNG
+NgaySinh LÀ 1 GIÁ TRỊ KIỂU NGÀY THÁNG, KO ĐỂ TRỐNG
+MaKhoa LÀ 1 SỐ NGUYÊN, KO ĐỂ TRỐNG, THAM CHIẾU SANG MaKhoa BẢNG Khoa
+(E) SinhVien(MaSinhVien,HoTen,NgaySinh,MaLop)
+MaSinhVien LÀ 1 SỐ NGUYÊN TỰ TĂNG, KHÓA CHÍNH
+HoTen LÀ 1 CHUỖI TỐI ĐA 30 KÝ TỰ, KO ĐỂ TRỐNG
+NgaySinh LÀ 1 GIÁ TRỊ KIỂU NGÀY THÁNG, KO ĐỂ TRỐNG
+TenLop LÀ 1 CHUỖI 7 KÝ TỰ, KO ĐỂ TRỐNG, THAM CHIẾU SANG TenLop BẢNG Lop
+ĐỀ 0: TẠO FORM QUẢN LÝ BẢNG (A) VÀ (B)
+ĐỀ 1: TẠO FORM QUẢN LÝ BẢNG (B) VÀ (C)
+ĐỀ 2: TẠO FORM QUẢN LÝ BẢNG (C) VÀ (D)
+ĐỀ 3: TẠO FORM QUẢN LÝ BẢNG (A) VÀ (D)
+ĐỀ 4: TẠO FORM QUẢN LÝ BẢNG (C) VÀ (E)
+THÊM, SỬA, XÓA, HIỂN THỊ + BẮT LỖI
+SỐ ĐỀ = MaSinhVien % 5

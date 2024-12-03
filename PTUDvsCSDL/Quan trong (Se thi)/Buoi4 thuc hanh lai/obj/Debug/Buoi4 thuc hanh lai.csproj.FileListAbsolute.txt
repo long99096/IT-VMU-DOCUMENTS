@@ -1,0 +1,10 @@
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\bin\Debug\Buoi4 thuc hanh lai.exe.config
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\bin\Debug\Buoi4 thuc hanh lai.exe
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\bin\Debug\Buoi4 thuc hanh lai.pdb
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\obj\Debug\Buoi4 thuc hanh lai.csproj.AssemblyReference.cache
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\obj\Debug\Buoi4_thuc_hanh_lai.Form1.resources
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\obj\Debug\Buoi4_thuc_hanh_lai.Properties.Resources.resources
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\obj\Debug\Buoi4 thuc hanh lai.csproj.GenerateResource.cache
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\obj\Debug\Buoi4 thuc hanh lai.csproj.CoreCompileInputs.cache
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\obj\Debug\Buoi4 thuc hanh lai.exe
+D:\PTUDvsCSDL\Buoi4\Buoi4 thuc hanh lai\Buoi4 thuc hanh lai\obj\Debug\Buoi4 thuc hanh lai.pdb

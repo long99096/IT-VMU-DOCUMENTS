@@ -1,0 +1,36 @@
+create database BuiHoangLong_99096
+
+use BuiHoangLong_99096
+
+create table NgonNgu_9(
+	MaNgonNgu char(2) primary key,
+	TenNgonNgu nvarchar(30) not null unique
+)
+
+create table LoaiChungChi_9(
+	MaLoaiChungChi int primary key identity,
+	TenLoaiChungChi nvarchar(30) not null unique,
+	MaNgonNgu char(2) references NgonNgu_9(MaNgonNgu),
+	ThoiHan int,
+	check (ThoiHan > 0)
+)
+
+create table PhongBan_0(
+	MaPhongBan char(2) primary key,
+	TenPhongBan nvarchar(30) not null unique
+)
+
+create table NhanVien_9(
+	MaNhanVien int identity primary key,
+	HoTen nvarchar(30) not null,
+	NgaySinh date not null,
+	MaPhongBan char(2) references PhongBan_0(MaPhongBan)
+)
+
+create table ChungChi_6(
+	MaChungChi int identity not null,
+	MaLoaiChungChi int references LoaiChungChi_9(MaLoaiChungChi),
+	MaNhanVien int references NhanVien_9(MaNhanVien),
+	NgayCap date not null,
+	NoiCap nvarchar(50) not null
+)

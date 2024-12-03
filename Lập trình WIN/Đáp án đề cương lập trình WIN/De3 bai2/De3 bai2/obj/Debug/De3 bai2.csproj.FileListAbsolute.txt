@@ -1,0 +1,20 @@
+C:\WF C#\De3 bai2\De3 bai2\bin\Debug\De3 bai2.exe.config
+C:\WF C#\De3 bai2\De3 bai2\bin\Debug\De3 bai2.exe
+C:\WF C#\De3 bai2\De3 bai2\bin\Debug\De3 bai2.pdb
+C:\WF C#\De3 bai2\De3 bai2\obj\Debug\De3 bai2.csproj.AssemblyReference.cache
+C:\WF C#\De3 bai2\De3 bai2\obj\Debug\De3_bai2.Form1.resources
+C:\WF C#\De3 bai2\De3 bai2\obj\Debug\De3_bai2.Properties.Resources.resources
+C:\WF C#\De3 bai2\De3 bai2\obj\Debug\De3 bai2.csproj.GenerateResource.cache
+C:\WF C#\De3 bai2\De3 bai2\obj\Debug\De3 bai2.csproj.CoreCompileInputs.cache
+C:\WF C#\De3 bai2\De3 bai2\obj\Debug\De3 bai2.exe
+C:\WF C#\De3 bai2\De3 bai2\obj\Debug\De3 bai2.pdb
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\bin\Debug\De3 bai2.exe.config
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\bin\Debug\De3 bai2.exe
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\bin\Debug\De3 bai2.pdb
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\obj\Debug\De3 bai2.csproj.AssemblyReference.cache
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\obj\Debug\De3_bai2.Form1.resources
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\obj\Debug\De3_bai2.Properties.Resources.resources
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\obj\Debug\De3 bai2.csproj.GenerateResource.cache
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\obj\Debug\De3 bai2.csproj.CoreCompileInputs.cache
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\obj\Debug\De3 bai2.exe
+C:\Users\Long Hoang Bui\OneDrive\Tài liệu\IT VMU DOCUMENTS\Lập trình WIN\Đáp án đề cương lập trình WIN\De3 bai2\De3 bai2\obj\Debug\De3 bai2.pdb
