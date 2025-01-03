@@ -1,0 +1,5 @@
+ private void loaddgvNhanVien()
+        {
+            dgvNhanVien.DataSource = Database.Query("select * from vNhanVien");
+            btnSua.Enabled = btnXoa.Enabled = dgvNhanVien.Rows.Count > 0;
+        }

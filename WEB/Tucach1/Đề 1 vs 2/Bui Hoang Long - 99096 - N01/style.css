@@ -1,0 +1,65 @@
+body{
+	width: 770px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+#header{
+	width: 770px;
+	height: 40px;
+	background-color: blue;
+	font-family: Time New Roman;
+	color: white;
+}
+
+#product-body{
+	width: 100%;
+	height: 100%;
+	margin-top: 20px;
+}
+
+.product{
+	width: 255px;
+	height: 190px;
+	float: left;
+}
+
+.image img{
+	width: 115px;
+	height: 150px;
+	float: left;
+}
+
+.image{
+	float: left;
+}
+
+.productname{
+	font-weight: bold;
+}
+
+.product ul {
+	margin-left: -20px;
+	font-size: 12px;
+	font-family: Time New Roman;
+}
+
+.chi-tiet{
+	margin-top: 10px;
+	float:left;
+}
+.gia{
+	margin-top: 10px;
+	width: 60px;
+	height: 26px;
+	background-color: gray;
+	float: left;
+}
+
+#chitiet{
+	margin-top: 10px;
+}
+
+#timkiem{
+	margin-top: 10px;
+}

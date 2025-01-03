@@ -1,0 +1,19 @@
+CREATE PROCEDURE ThemNhanVien
+    @HoTen NVARCHAR(30),@NgaySinh DATE,@GioiTinh BIT,@DiaChi NVARCHAR(100),
+    @MaChucVu INT,@MaPhongBan INT
+AS BEGIN
+    DECLARE @Dem INT
+    DECLARE @Loi NVARCHAR(300)
+    SET @Loi = ''
+    SET @Dem = (SELECT COUNT(*) FROM ChucVu WHERE MaChucVu=@MaChucVu)
+    IF @Dem = 0
+        SET @Loi = N'Mã ch?c v? không t?n t?i. '
+    SET @Dem = (SELECT COUNT(*) FROM PhongBan WHERE MaPhongBan=@MaPhongBan)
+    IF @Dem = 0
+        SET @Loi = @Loi + N'Mã phòng ban không t?n t?i. '
+    IF @Loi <> ''
+        RAISERROR(@Loi,16,1)
+    ELSE
+        INSERT NhanVien VALUES
+        (@HoTen,@NgaySinh,@GioiTinh,@DiaChi,@MaChucVu,@MaPhongBan)
+END

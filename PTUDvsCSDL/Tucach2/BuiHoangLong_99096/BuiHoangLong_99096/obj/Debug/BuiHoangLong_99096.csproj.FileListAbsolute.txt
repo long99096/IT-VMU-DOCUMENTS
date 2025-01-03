@@ -1,0 +1,10 @@
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\bin\Debug\BuiHoangLong_99096.exe.config
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\bin\Debug\BuiHoangLong_99096.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\bin\Debug\BuiHoangLong_99096.pdb
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\obj\Debug\BuiHoangLong_99096.csproj.AssemblyReference.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\obj\Debug\BuiHoangLong_99096.FrmSanPham.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\obj\Debug\BuiHoangLong_99096.Properties.Resources.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\obj\Debug\BuiHoangLong_99096.csproj.GenerateResource.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\obj\Debug\BuiHoangLong_99096.csproj.CoreCompileInputs.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\obj\Debug\BuiHoangLong_99096.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach2\BuiHoangLong_99096\BuiHoangLong_99096\obj\Debug\BuiHoangLong_99096.pdb

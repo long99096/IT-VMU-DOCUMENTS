@@ -1,0 +1,10 @@
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\bin\Debug\De2.exe.config
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\bin\Debug\De2.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\bin\Debug\De2.pdb
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\obj\Debug\De2.csproj.AssemblyReference.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\obj\Debug\De2.Form1.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\obj\Debug\De2.Properties.Resources.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\obj\Debug\De2.csproj.GenerateResource.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\obj\Debug\De2.csproj.CoreCompileInputs.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\obj\Debug\De2.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach1\De2\De2\obj\Debug\De2.pdb

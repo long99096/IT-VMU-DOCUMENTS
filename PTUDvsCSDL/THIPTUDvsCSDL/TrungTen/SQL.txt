@@ -1,0 +1,25 @@
+create procedure ThemA
+@MaNhaSanXuat varchar(3),@TenNhaSanXuat nvarchar(50),@DiaChi nvarchar(100),
+@DienThoai char(10),@NgayThanhLap date
+AS BEGIN
+    DECLARE @Dem INT
+    DECLARE @Loi NVARCHAR(300)
+    SET @Loi = '' 
+    IF EXISTS (SELECT 1 FROM NhaSanXuat_6 WHERE TenNhaSanXuat = @TenNhaSanXuat)
+    BEGIN
+        SET @Loi = N'Trùng tên nhà sản xuất. '
+    END
+    IF EXISTS (SELECT 1 FROM NhaSanXuat_6 WHERE DienThoai = @DienThoai)
+    BEGIN
+        SET @Loi = @Loi + N'Trùng số điện thoại. '
+    END
+    IF @Loi <> ''
+    BEGIN
+        RAISERROR(@Loi, 16, 1)
+    END
+    ELSE
+        INSERT NhaSanXuat_6 VALUES
+        (@MaNhaSanXuat,@TenNhaSanXuat,@DiaChi,@DienThoai,@NgayThanhLap)
+END
+
+EXEC ThemA 'UK', N'Anh', N'123 Anh', '444', '2024-04-04'

@@ -1,0 +1,16 @@
+private bool CheckForm()
+        {
+            erpBaoLoi.Clear();
+            bool isFine = true;
+            if (txtHoTen.Text.Trim() == "")
+            {
+                erpBaoLoi.SetError(txtHoTen, "Nhap Ho Ten");
+                isFine = false;
+            }
+            if (txtDiaChi.Text.Trim() == "")
+            {
+                erpBaoLoi.SetError(txtDiaChi, "Nhap Dia Chi");
+                isFine = false;
+            }
+            return isFine;
+        }

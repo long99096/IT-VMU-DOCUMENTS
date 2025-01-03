@@ -1,0 +1,10 @@
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\bin\Debug\ViDuSQLNangCaoOnTap.exe.config
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\bin\Debug\ViDuSQLNangCaoOnTap.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\bin\Debug\ViDuSQLNangCaoOnTap.pdb
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\obj\Debug\ViDuSQLNangCaoOnTap.csproj.AssemblyReference.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\obj\Debug\ViDuSQLNangCaoOnTap.FrmQuanLyNhanVien.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\obj\Debug\ViDuSQLNangCaoOnTap.Properties.Resources.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\obj\Debug\ViDuSQLNangCaoOnTap.csproj.GenerateResource.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\obj\Debug\ViDuSQLNangCaoOnTap.csproj.CoreCompileInputs.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\obj\Debug\ViDuSQLNangCaoOnTap.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\ViDuSQLNangCaoOnTap\obj\Debug\ViDuSQLNangCaoOnTap.pdb

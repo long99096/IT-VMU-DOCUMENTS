@@ -1,0 +1,6 @@
+create view vNhanVien
+as
+select MaNhanVien,HoTen,NgaySinh,case GioiTinh when 1 then 'Nam' when 0 then 'Nu' end GioiTinh,DiaChi,TenChucVu,TenPhongBan
+from NhanVien
+inner join ChucVu on NhanVien.MaChucVu = ChucVu.MaChucVu
+inner join PhongBan on NhanVien.MaPhongBan = PhongBan.MaPhongBan

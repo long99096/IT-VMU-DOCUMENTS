@@ -1,0 +1,175 @@
+Xin chào,
+Tôi gửi các bạn 1 số bước của bài hôm trướcBƯỚC 1:
+VIẾT LỆNH TẠO CSDL
+VIẾT LỆNH TẠO CÁC BẢNG
+CREATE DATABASE ViDuSQLNangCao
+USE ViDuSQLNangCao
+CREATE TABLE ChucVu (
+    MaChucVu INT IDENTITY PRIMARY KEY,
+    TenChucVu NVARCHAR(30) NOT NULL UNIQUE
+)
+CREATE TABLE PhongBan (
+    MaPhongBan INT IDENTITY PRIMARY KEY,
+    TenPhongBan NVARCHAR(30) NOT NULL UNIQUE
+)
+CREATE TABLE NhanVien (
+    MaNhanVien INT IDENTITY PRIMARY KEY,
+    HoTen NVARCHAR(30) NOT NULL,
+    NgaySinh DATE NOT NULL,
+    GioiTinh BIT NOT NULL,
+    DiaChi NVARCHAR(100) NOT NULL,
+    MaChucVu INT NOT NULL REFERENCES ChucVu(MaChucVu),
+    MaPhongBan INT NOT NULL REFERENCES PhongBan(MaPhongBan)
+)
+* NẾU CÓ THỂ: THÊM MỖI 1 BẢNG 2-3 DÒNG DỮ LIỆU
+XÂY DỰNG CHỨC NĂNG QUẢN LÝ NHÂN VIÊN:
+- THÊM, SỬA, XÓA, HIỂN THỊ DANH SÁCH
+- TÌM KIẾM NHÂN VIÊN THEO:
+MÃ, HỌ TÊN, NGÀY SINH, GIỚI TÍNH, ĐỊA CHỈ, CHỨC VỤ, PHÒNG BAN
+- CÁC CỘT KHÓA NGOẠI HIỂN THỊ TÊN THAY VÌ MÃ
+- KHI NHẬP DỮ LIỆU CÁC CỘT KHÓA NGOẠI YÊU CẦU DÙNG CBB HIỂN THỊ TÊN
+BƯỚC 2:
+TẠO 1 PROJECT WINDOWS FORMS APPLICATION (DOTNET FRAMEWORK)
+* ĐỔI TÊN FORM1 THÀNH FrmQuanLyNhanVien
+BƯỚC 3:
+THIẾT KẾ FORM FrmQuanLyNhanVien ĐỂ ĐÁP ỨNG YÊU CẦU ĐỀ BÀI:
+THÊM, SỬA, XÓA, HIỂN THỊ DANH SÁCH
+- PHẦN 1: THÔNG TIN NHÂN VIÊN
+    + DATETIMEPICKER: FORMAT(CUSTOM), CUSTOMFORMAT(dd/MM/yyyy)
+    + COMBOBOX: DISPLAYMEMBER, VALUEMEMBER
+- PHẦN 2: CÁC NÚT CHỨC NĂNG
+- PHẦN 3: DANH SÁCH NHÂN VIÊN (DATAGRIDVIEW)
+    + ALLOW...: FALSE
+    + READONLY: TRUE
+    + MULTISLECT: FALSE
+    + SELECTION MODE: FULL ROW SELECT
+    + CHUỘT PHẢI CHỌN EDIT COLUMNS ĐỂ ADD CÁC CỘT:
+        -/ (Name)
+        -/ HEADERTEXT (TIÊU ĐỀ CỘT)
+        -/ DataPropertyName
+BƯỚC 4: LẬP TRÌNH
+ADD 1 CLASS MỚI VÀO ĐẶT TÊN LÀ Database. SAU ĐÓ CÀI ĐẶT CLASS ĐÓ
+class Database
+{
+    private static string connectionString =
+        "server=.;database=ViDuSQLNangCao;integrated security=true;";
+    public static DataTable Query(string sql)
+    {
+        SqlConnection connection = new SqlConnection(connectionString);
+        connection.Open();
+        SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
+        DataTable table = new DataTable();
+        adapter.Fill(table);
+        connection.Close();
+        return table;
+    }
+    public static void Execute(string sql)
+    {
+        SqlConnection connection = new SqlConnection(connectionString);
+        connection.Open();
+        SqlCommand command = new SqlCommand(sql, connection);
+        command.ExecuteNonQuery();
+        connection.Close();
+    }
+}
+XÁC ĐỊNH CÁC CÔNG VIỆC CẦN LÀM KHI FORM VỪA CHẠY LÊN:
+- NẠP DỮ LIỆU LÊN CÁC COMBOBOX
+- NẠP DỮ LIỆU LÊN DATAGRIDVIEW
+XÁC ĐỊNH CÁC SỰ KIỆN TƯƠNG TÁC VỚI NGƯỜI DÙNG CẦN LẬP TRÌNH
+- CLICK NÚT THÊM (X)
+- CLICK NÚT SỬA (X)
+- CLICK NÚT XÓA (X)
+- CLICK NÚT THOÁT (X)
+- CHỌN 1 DÒNG TRÊN DGV (X)
+- CLICK NÚT TÌM KIẾM
+--------------------------------------------
+------------------------------------------------------------------------
+PHẦN VIỆC BÊN CSDL:
+TẠO RA 3 THỦ TỤC (PROCEDURE) CÓ BẮT CÁC LỖI LOGIC DỮ LIỆU:
+- ThemNhanVien
+HoTen, NgaySinh, GioiTinh, DiaChi, MaChucVu, MaPhongBan
+CREATE PROCEDURE ThemNhanVien
+    @HoTen NVARCHAR(30),@NgaySinh DATE,@GioiTinh BIT,@DiaChi NVARCHAR(100),
+    @MaChucVu INT,@MaPhongBan INT
+AS BEGIN
+    DECLARE @Dem INT
+    DECLARE @Loi NVARCHAR(300)
+    SET @Loi = ''
+    SET @Dem = (SELECT COUNT(*) FROM ChucVu WHERE MaChucVu=@MaChucVu)
+    IF @Dem = 0
+        SET @Loi = N'Mã chức vụ không tồn tại. '
+    SET @Dem = (SELECT COUNT(*) FROM PhongBan WHERE MaPhongBan=@MaPhongBan)
+    IF @Dem = 0
+        SET @Loi = @Loi + N'Mã phòng ban không tồn tại. '
+    IF @Loi <> ''
+        RAISERROR(@Loi,16,1)
+    ELSE
+        INSERT NhanVien VALUES
+        (@HoTen,@NgaySinh,@GioiTinh,@DiaChi,@MaChucVu,@MaPhongBan)
+END
+- SuaNhanVien MaNhanVien, HoTen, NgaySinh, GioiTinh, DiaChi, MaChucVu, MaPhongBan
+CREATE PROCEDURE SuaNhanVien
+    @MaNhanVien INT,@HoTen NVARCHAR(30),@NgaySinh DATE,@GioiTinh BIT,
+    @DiaChi NVARCHAR(100),@MaChucVu INT,@MaPhongBan INT
+AS BEGIN
+    DECLARE @Dem INT
+    DECLARE @Loi NVARCHAR(300)
+    SET @Loi = ''
+    SET @Dem = (SELECT COUNT(*) FROM NhanVien WHERE MaNhanVien=@MaNhanVien)
+    IF @Dem = 0
+        SET @Loi = N'Mã nhân viên không tồn tại. '
+    SET @Dem = (SELECT COUNT(*) FROM ChucVu WHERE MaChucVu=@MaChucVu)
+    IF @Dem = 0
+        SET @Loi = @Loi + N'Mã chức vụ không tồn tại. '
+    SET @Dem = (SELECT COUNT(*) FROM PhongBan WHERE MaPhongBan=@MaPhongBan)
+    IF @Dem = 0
+        SET @Loi = @Loi + N'Mã phòng ban không tồn tại. '
+    IF @Loi <> ''
+        RAISERROR(@Loi,16,1)
+    ELSE
+        UPDATE NhanVien
+            SET HoTen=@HoTen,NgaySinh=@NgaySinh,GioiTinh=@GioiTinh,
+            DiaChi=@DiaChi,MaChucVu=@MaChucVu,MaPhongBan=@MaPhongBan
+            WHERE MaNhanVien=@MaNhanVien
+END
+- XoaNhanVien MaNhanVien
+CREATE PROCEDURE XoaNhanVien @MaNhanVien INT
+AS BEGIN
+    DECLARE @Dem INT
+    SET @Dem = (SELECT COUNT(*) FROM NhanVien WHERE MaNhanVien=@MaNhanVien)
+    IF @Dem > 0
+        DELETE NhanVien WHERE MaNhanVien = @MaNhanVien
+    ELSE
+        RAISERROR(N'Mã nhân viên không tồn tại',16,1)
+END
+TẠO RA 1 KHUNG NHÌN (VIEW)
+vNhanVien MaNhanVien,HoTen,NgaySinh,GioiTinh,DiaChi,TenChucVu,TenPhongBan
+CREATE VIEW vNhanVien
+AS
+SELECT MaNhanVien,HoTen,NgaySinh,
+    CASE GioiTinh WHEN 1 THEN 'Nam' WHEN 0 THEN N'Nữ' END GioiTinh,
+    DiaChi,TenChucVu,TenPhongBan
+FROM NhanVien
+INNER JOIN ChucVu ON NhanVien.MaChucVu=ChucVu.MaChucVu
+INNER JOIN PhongBan ON NhanVien.MaPhongBan=PhongBan.MaPhongBan
+SELECT * FROM vNhanVien
+TẠO RA 1 HÀM (FUNCTION)
+TimKiemNhanVien MaNhanVien,HoTen,NgaySinh,GioiTinh,DiaChi,MaChucVu,MaPhongBan
+CREATE FUNCTION TimKiemNhanVien
+    (@MaNhanVien INT,@HoTen NVARCHAR(30),@NgaySinh DATE,@GioiTinh BIT,
+    @DiaChi NVARCHAR(100),@MaChucVu INT,@MaPhongBan INT)
+RETURNS TABLE
+AS RETURN
+(SELECT MaNhanVien,HoTen,NgaySinh,
+    CASE GioiTinh WHEN 1 THEN 'Nam' WHEN 0 THEN N'Nữ' END GioiTinh,
+    DiaChi,TenChucVu,TenPhongBan
+FROM NhanVien
+INNER JOIN ChucVu ON NhanVien.MaChucVu=ChucVu.MaChucVu
+INNER JOIN PhongBan ON NhanVien.MaPhongBan=PhongBan.MaPhongBan
+WHERE (MaNhanVien = @MaNhanVien OR @MaNhanVien IS NULL)
+AND (HoTen LIKE '%' + @HoTen + '%')
+AND (GioiTinh=@GioiTinh OR @GioiTinh IS NULL)
+AND (NgaySinh=@NgaySinh OR @NgaySinh IS NULL)
+AND (DiaChi LIKE '%' + @DiaChi + '%')
+AND (NhanVien.MaChucVu=@MaChucVu OR @MaChucVu IS NULL)
+AND (NhanVien.MaPhongBan=@MaPhongBan OR @MaPhongBan IS NULL))

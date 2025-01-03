@@ -1,0 +1,10 @@
+private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string sql = "select * from NhaCungCap where TenNhaCungCap like '%' + @TenNhaCungCap + '%' and DiaChi like '%' + @DiaChi + '%' and " +
+                "DienThoai like '%' + @DienThoai + '%'";
+            Dictionary<string, object> dictionary = new Dictionary<string, object>();
+            dictionary.Add("@TenNhaCungCap",txtTenNhaCungCapTK.Text);
+            dictionary.Add("@DiaChi", txtDiaChiTK.Text);
+            dictionary.Add("@DienThoai", txtDienThoaiTK.Text);
+            dgvNhaCungCap.DataSource = Database.Query(sql, dictionary);
+        }

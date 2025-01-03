@@ -1,0 +1,9 @@
+CREATE PROCEDURE XoaNhanVien @MaNhanVien INT
+AS BEGIN
+    DECLARE @Dem INT
+    SET @Dem = (SELECT COUNT(*) FROM NhanVien WHERE MaNhanVien=@MaNhanVien)
+    IF @Dem > 0
+        DELETE NhanVien WHERE MaNhanVien = @MaNhanVien
+    ELSE
+        RAISERROR(N'Mã nhân viên không t?n t?i',16,1)
+END

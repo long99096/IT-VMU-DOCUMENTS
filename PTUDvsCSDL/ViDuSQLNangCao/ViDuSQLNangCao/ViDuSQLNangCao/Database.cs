@@ -24,15 +24,15 @@ namespace ViDuSQLNangCao
             return table;
         }
 
-        public static DataTable Query(string sql, Dictionary<string, object> dictionary)
+        public static DataTable Query(string sql,Dictionary<string,object> Dictionary)
         {
             connection = new SqlConnection(connectionString);
             connection.Open();
             SqlDataAdapter adapter = new SqlDataAdapter(sql, connection);
             DataTable table = new DataTable();
-            foreach(string key in dictionary.Keys)
+            foreach(string key in Dictionary.Keys)
             {
-                adapter.SelectCommand.Parameters.AddWithValue(key, dictionary[key]);
+                adapter.SelectCommand.Parameters.AddWithValue(key, Dictionary[key]);
             }
             adapter.Fill(table);
             connection.Close();
@@ -43,19 +43,19 @@ namespace ViDuSQLNangCao
         {
             connection = new SqlConnection(connectionString);
             connection.Open();
-            SqlCommand cmd = new SqlCommand(sql, connection);
+            SqlCommand cmd = new SqlCommand(sql);
             cmd.ExecuteNonQuery();
             connection.Close();
         }
 
-        public static void Execute(string sql, Dictionary<string, object> dictionary)
+        public static void Execute(string sql, Dictionary<string, object> Dictionary)
         {
             connection = new SqlConnection(connectionString);
             connection.Open();
-            SqlCommand cmd = new SqlCommand(sql, connection);
-            foreach(string key in dictionary.Keys)
+            SqlCommand cmd = new SqlCommand(sql);
+            foreach(string key in Dictionary.Keys)
             {
-                cmd.Parameters.AddWithValue(key, dictionary[key]);
+                cmd.Parameters.AddWithValue(key, Dictionary[key]);
             }
             cmd.ExecuteNonQuery();
             connection.Close();

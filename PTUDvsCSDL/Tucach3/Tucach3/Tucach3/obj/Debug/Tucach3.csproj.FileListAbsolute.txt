@@ -1,0 +1,10 @@
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\bin\Debug\Tucach3.exe.config
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\bin\Debug\Tucach3.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\bin\Debug\Tucach3.pdb
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\obj\Debug\Tucach3.csproj.AssemblyReference.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\obj\Debug\Tucach3.Form1.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\obj\Debug\Tucach3.Properties.Resources.resources
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\obj\Debug\Tucach3.csproj.GenerateResource.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\obj\Debug\Tucach3.csproj.CoreCompileInputs.cache
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\obj\Debug\Tucach3.exe
+D:\IT VMU DOCUMENTS\PTUDvsCSDL\Tucach3\Tucach3\Tucach3\obj\Debug\Tucach3.pdb

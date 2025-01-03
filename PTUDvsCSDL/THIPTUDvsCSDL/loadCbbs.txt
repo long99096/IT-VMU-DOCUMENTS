@@ -1,0 +1,20 @@
+private void loadCbbs()
+        {
+            cbbGioiTinh.Text = "Nam";
+
+            cbbChucVu.ValueMember = "MaChucVu";
+            cbbChucVu.DisplayMember = "TenChucVu";
+            cbbChucVu.DataSource = Database.Query("select * from ChucVu");
+
+            cbbPhongBan.ValueMember = "MaPhongBan";
+            cbbPhongBan.DisplayMember = "TenPhongBan";
+            cbbPhongBan.DataSource = Database.Query("select * from PhongBan");
+
+            cbbChucVuTK.ValueMember = "MaChucVu";
+            cbbChucVuTK.DisplayMember = "TenChucVu";
+            cbbChucVuTK.DataSource = Database.Query("select * from ChucVu");
+
+            cbbPhongBanTK.ValueMember = "MaPhongBan";
+            cbbPhongBanTK.DisplayMember = "TenPhongBan";
+            cbbPhongBanTK.DataSource = Database.Query("select * from PhongBan");
+        }

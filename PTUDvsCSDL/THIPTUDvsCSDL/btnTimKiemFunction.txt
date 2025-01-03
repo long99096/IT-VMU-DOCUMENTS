@@ -1,0 +1,33 @@
+private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM dbo.TimKiemNhanVien(@MaNhanVien,@HoTen,@NgaySinh,@GioiTinh,@DiaChi,@MaChucVu,@MaPhongBan)";
+            Dictionary<string, object> tuDien = new Dictionary<string, object>();
+            if (checkMaNhanVien.Checked)
+                tuDien.Add("@MaNhanVien", numericUpDownMaNhanVienTK.Value);
+            else
+                tuDien.Add("@MaNhanVien", DBNull.Value);
+            if (checkHoTen.Checked)
+                tuDien.Add("@HoTen", txtHoTenTK.Text);
+            else
+                tuDien.Add("@HoTen", "");
+            if (checkNgaySinh.Checked)
+                tuDien.Add("@NgaySinh", dtpNgaySinhTK.Value);
+            else
+                tuDien.Add("@NgaySinh", DBNull.Value);
+            if (checkGioiTinh.Checked)
+                tuDien.Add("@GioiTinh", (cbbGioiTinhTK.Text == "Nam" ? 1 : 0));
+            else
+                tuDien.Add("@GioiTinh", DBNull.Value);
+            if (checkDiaChi.Checked)
+                tuDien.Add("@DiaChi", txtDiaChiTK.Text);
+            else
+                tuDien.Add("@DiaChi", "");
+            if (checkChucVu.Checked)
+                tuDien.Add("@MaChucVu", cbbChucVuTK.SelectedValue);
+            else
+                tuDien.Add("@MaChucVu", DBNull.Value);
+            if (checkPhongBan.Checked)
+                tuDien.Add("@MaPhongBan", cbbPhongBanTK.SelectedValue);
+            else
+                tuDien.Add("@MaPhongBan", DBNull.Value);
+            dgvNhan

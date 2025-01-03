@@ -1,0 +1,35 @@
+CREATE FUNCTION TimKiemNhanVien
+    (@MaNhanVien INT,@HoTen NVARCHAR(30),@NgaySinh DATE,@GioiTinh BIT,
+    @DiaChi NVARCHAR(100),@MaChucVu INT,@MaPhongBan INT)
+RETURNS TABLE
+AS RETURN
+(SELECT MaNhanVien,HoTen,NgaySinh,
+    CASE GioiTinh WHEN 1 THEN 'Nam' WHEN 0 THEN N'N?' END GioiTinh,
+    DiaChi,TenChucVu,TenPhongBan
+FROM NhanVien
+INNER JOIN ChucVu ON NhanVien.MaChucVu=ChucVu.MaChucVu
+INNER JOIN PhongBan ON NhanVien.MaPhongBan=PhongBan.MaPhongBan
+WHERE (MaNhanVien = @MaNhanVien OR @MaNhanVien IS NULL)
+AND (HoTen LIKE '%' + @HoTen + '%')
+AND (GioiTinh=@GioiTinh OR @GioiTinh IS NULL)
+AND (NgaySinh=@NgaySinh OR @NgaySinh IS NULL)
+AND (DiaChi LIKE '%' + @DiaChi + '%')
+AND (NhanVien.MaChucVu=@MaChucVu OR @MaChucVu IS NULL)
+AND (NhanVien.MaPhongBan=@MaPhongBan OR @MaPhongBan IS NULL))
+
+
+create function TimKiemNhaCungCap(
+	@chuoi nvarchar(50)
+)
+returns table
+as return
+(
+	select * from NhaCungCap_9
+	where MaNhaCungCap like '%' + @chuoi + '%'
+	or TenNhaCungCap like '%' + @chuoi + '%'
+	or Email like '%' + @chuoi + '%'
+	or NguoiDaiDien like '%' + @chuoi + '%'
+	or CONVERT(nvarchar, NgayBatDauHopTac, 103) like '%' + @chuoi + '%'
+)
+
+select * from dbo.TimKiemNhaCungCap('01')

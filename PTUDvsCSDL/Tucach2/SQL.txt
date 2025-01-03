@@ -1,0 +1,75 @@
+create database BuiHoangLong_99096
+use BuiHoangLong_99096
+create table NhaSanXuat_6(
+	MaNhaSanXuat varchar(3) primary key,
+	TenNhaSanXuat nvarchar(50) not null unique,
+	DiaChi nvarchar(100) not null,
+	DienThoai char(10) not null unique,
+	NgayThanhLap date
+)
+
+create table NhaCungCap_9(
+	MaNhaCungCap char(3) primary key,
+	TenNhaCungCap nvarchar(50) not null unique,
+	Email nvarchar(50) not null unique,
+	NguoiDaiDien nvarchar(50) not null,
+	NgayBatDauHopTac date not null
+)
+
+create table SanPham_0(
+	MaSanPham char(3) primary key,
+	TenSanPham nvarchar(50) not null unique,
+	MaNhaCungCap char(3) not null references NhaCungCap_9(MaNhaCungCap),
+	MaNhaSanXuat varchar(3) not null references NhaSanXuat_6(MaNhaSanXuat)
+)
+
+create view vSanPham
+as
+select MaSanPham,TenSanPham,TenNhaCungCap,TenNhaSanXuat
+from SanPham_0
+inner join NhaSanXuat_6 on NhaSanXuat_6.MaNhaSanXuat = SanPham_0.MaNhaSanXuat
+inner join NhaCungCap_9 on NhaCungCap_9.MaNhaCungCap = SanPham_0.MaNhaCungCap
+
+create procedure ThemA
+@MaNhaSanXuat varchar(3),@TenNhaSanXuat nvarchar(50),@DiaChi nvarchar(100),
+@DienThoai char(10),@NgayThanhLap date
+AS BEGIN
+    DECLARE @Dem INT
+    DECLARE @Loi NVARCHAR(300)
+    SET @Loi = '' 
+    IF EXISTS (SELECT 1 FROM NhaSanXuat_6 WHERE TenNhaSanXuat = @TenNhaSanXuat)
+    BEGIN
+        SET @Loi = N'Trùng tên nhà sản xuất. '
+    END
+    IF EXISTS (SELECT 1 FROM NhaSanXuat_6 WHERE DienThoai = @DienThoai)
+    BEGIN
+        SET @Loi = @Loi + N'Trùng số điện thoại. '
+    END
+    IF @Loi <> ''
+    BEGIN
+        RAISERROR(@Loi, 16, 1)
+    END
+    ELSE
+        INSERT NhaSanXuat_6 VALUES
+        (@MaNhaSanXuat,@TenNhaSanXuat,@DiaChi,@DienThoai,@NgayThanhLap)
+END
+
+EXEC ThemA 'UK', N'Anh', N'123 Anh', '444', '2024-04-04'
+
+create function TimKiemNhaCungCap(
+	@chuoi nvarchar(50)
+)
+returns table
+as return
+(
+	select * from NhaCungCap_9
+	where MaNhaCungCap like '%' + @chuoi + '%'
+	or TenNhaCungCap like '%' + @chuoi + '%'
+	or Email like '%' + @chuoi + '%'
+	or NguoiDaiDien like '%' + @chuoi + '%'
+	or CONVERT(nvarchar, NgayBatDauHopTac, 103) like '%' + @chuoi + '%'
+)
+
+select * from dbo.TimKiemNhaCungCap('01')
+
+

@@ -1,0 +1,10 @@
+code tìm cách thêm ảnh bằng cách chọn file(không phải thêm ảnh bằng link như hiện tại)
+
+code đẹp vừa, ít hoặc k cần css(tránh để thầy cô phát hiện là cheat và bắt gõ lại)
+
+logo và ảnh thì lấy ảnh chụp màn hình(hôm thi lấy ảnh ở nhà cô biết cheat là bị trừ điểm)
+
+1 vài link boostrap cần wifi mới chạy được -> lúc làm bị ngắt mạng sẽ xấu nhưng khi cuối giờ cô bật mạng leen thì lại đẹp
+
+đề 2020-2021 nhiều bảng khó sẽ không thi vào(tôi để tham khảo thôi)
+đi thi sẽ chỉ có 1 bảng ... và 1 bảng user như đề 2023-2024 

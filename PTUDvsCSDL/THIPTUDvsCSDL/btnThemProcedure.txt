@@ -1,0 +1,22 @@
+private void btnThem_Click(object sender, EventArgs e)
+        {
+            if (!CheckForm()) return;
+            string sql =
+                "EXEC ThemNhanVien @HoTen,@NgaySinh,@GioiTinh,@DiaChi,@MaChucVu,@MaPhongBan";
+            Dictionary<string, object> tuDien = new Dictionary<string, object>();
+            tuDien.Add("@HoTen", txtHoTen.Text);
+            tuDien.Add("@NgaySinh", dtpNgaySinh.Value.ToString());
+            tuDien.Add("@GioiTinh", (cbbGioiTinh.Text == "Nam" ? 1 : 0));
+            tuDien.Add("@DiaChi", txtDiaChi.Text);
+            tuDien.Add("@MaChucVu", cbbChucVu.SelectedValue);
+            tuDien.Add("@MaPhongBan", cbbPhongBan.SelectedValue);
+            try
+            {
+                Database.Execute(sql, tuDien);
+                loaddgvNhanVien();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Báo lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }

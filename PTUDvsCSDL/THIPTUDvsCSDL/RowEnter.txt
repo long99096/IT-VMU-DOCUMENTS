@@ -1,0 +1,9 @@
+private void dgvNhanVien_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            txtHoTen.Text = dgvNhanVien.Rows[e.RowIndex].Cells["colHoTen"].Value.ToString();
+            cbbGioiTinh.Text = dgvNhanVien.Rows[e.RowIndex].Cells["colGioiTinh"].Value.ToString();
+            dtpNgaySinh.Value = DateTime.Parse(dgvNhanVien.Rows[e.RowIndex].Cells["colNgaySinh"].Value.ToString());
+            txtDiaChi.Text = dgvNhanVien.Rows[e.RowIndex].Cells["colDiaChi"].Value.ToString();
+            cbbChucVu.Text = dgvNhanVien.Rows[e.RowIndex].Cells["colChucVu"].Value.ToString();
+            cbbPhongBan.Text = dgvNhanVien.Rows[e.RowIndex].Cells["colPhongBan"].Value.ToString();
+        }
