@@ -4,7 +4,10 @@ code đẹp vừa, ít hoặc k cần css(tránh để thầy cô phát hiện l
 
 logo và ảnh thì lấy ảnh chụp màn hình(hôm thi lấy ảnh ở nhà cô biết cheat là bị trừ điểm)
 
-1 vài link boostrap cần wifi mới chạy được -> lúc làm bị ngắt mạng sẽ xấu nhưng khi cuối giờ cô bật mạng leen thì lại đẹp
+1 vài link boostrap cần wifi mới chạy được -> lúc làm bị ngắt mạng sẽ xấu nhưng khi cuối giờ cô bật mạng lên thì lại đẹp
+
+có nhiều cách code khác nhau, nhiều bạn code khác vẫn ra dc web với đủ chức năng, code tôi gửi trong file THI, BaiBanNgan, BaiBanNghia ae tham khảo nếu thấy có ích thì dùng
 
 đề 2020-2021 nhiều bảng khó sẽ không thi vào(tôi để tham khảo thôi)
 đi thi sẽ chỉ có 1 bảng ... và 1 bảng user như đề 2023-2024
+

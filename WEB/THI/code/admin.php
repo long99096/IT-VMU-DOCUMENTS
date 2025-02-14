@@ -90,7 +90,7 @@ if (empty($_POST['timkiem'])) {
         </table>
     </content>
     <footer style="text-align: center;">
-        Bui Hoang Long - 99096 - CNT63DH
+        ...
         <br>
         Nguoi dung : <?php echo $_SESSION['tendaydu']; ?>
     </footer>
